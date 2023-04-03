@@ -1,0 +1,8 @@
+
+version: 2
+
+sources:
+  - name: stripe
+    tables:
+      - name: airbyte_subscriptions
+        columns: id
