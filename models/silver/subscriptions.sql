@@ -5,8 +5,7 @@ with subscriptions as (
         ,status
         ,customer
         ,quantity
-        ,cancel
-    from {{ source('stripe', 'airbyte_subscriptions') }}
+    from `da-dbt.airbyte.airbyte_subscriptions`
 )
 
 select * from subscriptions
