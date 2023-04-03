@@ -6,5 +6,5 @@ with subscriptions as (
         ,customer
         ,quantity
         ,cancel
-    from {{ source('airbyte', 'aiybyte_subscriptions') }}
+    from {{ source('stripe', 'aiybyte_subscriptions') }}
 )
