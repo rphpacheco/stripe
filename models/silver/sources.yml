@@ -3,6 +3,11 @@ version: 2
 
 sources:
   - name: stripe
+    description: Stripe project
+    tags:
+      - sources
     tables:
       - name: airbyte_subscriptions
-        columns: id
+        description: Entity
+        columns:
+          - name: id
